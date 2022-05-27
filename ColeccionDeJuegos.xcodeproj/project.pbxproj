@@ -14,6 +14,7 @@
 		A85D58362840630A009E594B /* ColeccionDeJuegos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A85D58342840630A009E594B /* ColeccionDeJuegos.xcdatamodeld */; };
 		A85D58382840630D009E594B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A85D58372840630D009E594B /* Assets.xcassets */; };
 		A85D583B2840630D009E594B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A85D58392840630D009E594B /* LaunchScreen.storyboard */; };
+		A85D5843284076C7009E594B /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85D5842284076C7009E594B /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A85D58372840630D009E594B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A85D583A2840630D009E594B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A85D583C2840630D009E594B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A85D5842284076C7009E594B /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				A85D58392840630D009E594B /* LaunchScreen.storyboard */,
 				A85D583C2840630D009E594B /* Info.plist */,
 				A85D58342840630A009E594B /* ColeccionDeJuegos.xcdatamodeld */,
+				A85D5842284076C7009E594B /* JuegosViewController.swift */,
 			);
 			path = ColeccionDeJuegos;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A85D5843284076C7009E594B /* JuegosViewController.swift in Sources */,
 				A85D58302840630A009E594B /* ViewController.swift in Sources */,
 				A85D582C2840630A009E594B /* AppDelegate.swift in Sources */,
 				A85D582E2840630A009E594B /* SceneDelegate.swift in Sources */,
