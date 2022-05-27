@@ -2,7 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E230" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Juego" representedClassName="Juego" syncable="YES" codeGenerationType="class">
         <attribute name="imagen" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
-        <attribute name="orderPosition" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="titulo" attributeType="String"/>
     </entity>
     <elements>

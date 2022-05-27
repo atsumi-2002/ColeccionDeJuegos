@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -16,7 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        self.tableView.isEditing = false
+        self.tableView.isEditing = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,7 +65,40 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let movedItem = juegos[fromIndexPath.row]
+        juegos.remove(at: fromIndexPath.row)
+        juegos.insert(movedItem, at: to.row)
+        for (i, item) in juegos.enumerated() {
+            item.setValue(i, forKey: "order")
+        }
+        do {
+            try context.save()
+        } catch let error as NSError {
+            print("Error in move: \(error)")
+        }
     }
+    
+    /*
+    private func moveItem(at sets:IndexSet, destination: Int) {
+        let itemToMove = sets.first!
+        if itemToMove < destination {
+            var startIndex = itemToMove + 1
+            let endIndex = destination
+            var startOrder = juegos[itemToMove].order
+            while startIndex <= endIndex {
+                juegos[startIndex].order = startOrder
+                startOrder = startOrder + 1
+                startIndex = startIndex + 1
+            }
+            juegos[itemToMove].order = startOrder
+        }
+        else if destination < itemToMove {
+            var startIndex = destination
+            let endIndex = itemToMove - 1
+            var startOrder = juegos[destination].order
+        }
+    }
+     */
 }
 

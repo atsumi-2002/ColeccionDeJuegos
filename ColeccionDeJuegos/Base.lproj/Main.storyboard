@@ -70,6 +70,13 @@
                                     <action selector="eliminarTapped:" destination="a9e-dm-QEU" eventType="touchUpInside" id="Dae-hh-ujd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsp-wg-7PB">
+                                <rect key="frame" x="186" y="438" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Yg-kg-euj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -103,6 +110,7 @@
                         <outlet property="JuegoImageView" destination="bPr-vx-VaD" id="SaF-HK-9Nq"/>
                         <outlet property="agregarActualizarBoton" destination="AAv-9U-6HK" id="DOT-m3-psp"/>
                         <outlet property="eliminarBoton" destination="mz8-ce-rXO" id="VDK-DX-iPe"/>
+                        <outlet property="labelorder" destination="Hsp-wg-7PB" id="QNN-nx-rBg"/>
                         <outlet property="tituloTextField" destination="QTc-Xo-gbX" id="bLi-IB-S8F"/>
                     </connections>
                 </viewController>
